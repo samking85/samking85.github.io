@@ -1,0 +1,31 @@
+main {
+  max-width: 70ch;
+  padding: 2ch;
+  margin: auto;
+  font-family: "Roboto", Helvetica, Arial, Sans-serif;
+  word-wrap: break-word;
+  background-color: white;
+  line-height: 1.5;
+font-color: #0;
+}
+
+::selection {background-color: #ffff7a;color: #000000;}
+
+.dropcap {float: left;font-size: 400%;color: #cf142b;margin: -13px 7px -13px 0;}
+
+h1 {
+	color: #cf142b;
+
+}
+
+.yellow {
+	background-color: #ffff7a;color: #000000;
+}
+
+.heading {
+color: #808080;
+}
+
+.footing {
+color: #808080;
+}
