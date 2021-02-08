@@ -6,7 +6,7 @@
   "minima/skins/{{ site.minima.skin | default: 'classic' }}",
   "minima/initialize";
 
-title, site-header, h1, h2, h3, h4, h5, post-link {
+site-title, site-header, h1, h2, h3, h4, h5, post-link {
 
   color: #cf142b;
 
