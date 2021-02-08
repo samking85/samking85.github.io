@@ -36,7 +36,7 @@ layout: page
 
     <article class="archive-item">
 
-      <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
+      <ul><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></ul>
 
     </article>
 
