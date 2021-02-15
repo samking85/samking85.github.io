@@ -1,8 +1,8 @@
 ---
 
 layout: page
-permalink: /categories/
-title: Categories
+permalink: /books/
+title: Books
 
 ---
 
