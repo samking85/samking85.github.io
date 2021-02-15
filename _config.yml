@@ -53,6 +53,7 @@ minima:
 header_pages:
  - about.md
  - categories.md
+ - books.md
 
 # Build settings
 theme: minima
