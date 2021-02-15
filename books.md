@@ -5,79 +5,23 @@ permalink: /books/
 title: Books
 
 ---
+ {% for post in site.categories.books %}
 
-{% include image-gallery.html folder="/books/" %}
-
-
-
-
-
-<div id="archives">
-
-
-
-{% for category in site.categories %}
-
-
-
-  <div class="archive-group">
-
-
-
-    {% capture category_name %}{{ category | first }}{% endcapture %}
-
-
-
-    <div id="#{{ category_name | slugize }}"></div>
-
-
-
-    <p></p>
-
-
-
-
-
-
-
-    <h3 class="category-head">{{ category_name }}</h3>
-
-
-
-    <a name="{{ category_name | slugize }}"></a>
-
-
-
-    {% for post in site.categories[category_name] %}
-
-
-
-    <article class="archive-item">
-
-
-
-      <ul><div><a href="{{ site.baseurl }}{{ post.url }}"><img src="{{ post.thumbnail }}" /></a><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></ul>
-        
-    </div>
-      
-    </article>
-
-
-
-    {% endfor %}
-
-
-
+<hr />
+<div class="row">
+  <div class="span2">
+    {% if post.thumbnail %}
+	<img src="{{ post.thumbnail }}" align="center" />
+	{% else %}
+	<img src="/assets/themes/tmtxt-responsive/images/no-thumnail.jpg" align="center" />
+	{% endif %}
   </div>
-
-
-
-{% endfor %}
-
-
-
+  <div class="span10">
+    <p><a href="{{ BASE_PATH }}{{ post.url }}"><h3>{{ post.title }}</h3></a></p>
+	<p>{{ post.content | strip_html | truncatewords: 40 }}
+	</p>
+  </div>
 </div>
-
-
+{% endfor %}
 
 
