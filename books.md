@@ -5,7 +5,7 @@ permalink: /books/
 title: Books
 
 ---
- {% for post in site.categories.books %}
+ {% for post in site.categories.book %}
 
 <hr />
 <div class="row">
