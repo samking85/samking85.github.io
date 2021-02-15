@@ -7,7 +7,7 @@ title: Books
 ---
 
 {% for post in site.categories.book %}
- + [{{ post.title }}]({{ page.url }})
+ +<li>{{ post.title }}</li>
 {% endfor %}
 
 
